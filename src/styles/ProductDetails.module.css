@@ -1,0 +1,129 @@
+body {
+    background-color: #f2f2f2;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin: 150px 150px 50px;
+    background-color: #fff;
+    border: 1px solid silver;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 0 5px gray;    
+}
+.images{
+   width:400px;
+   height:200px;
+    height:max-content;
+    overflow: hidden;
+    transition: transform 0.2s ease-in;
+    margin:40px;
+}
+.images:hover {
+    transform: scale(1.1);
+    overflow: hidden;
+}
+.infoProduct {
+    text-align: left;
+    margin-left: 30px;
+    padding: 20px;
+    border: 1px solid silver;
+    border-radius: 10px;
+}
+.infoProduct h1 {
+    margin: 20px 0 30px;
+}
+.description {
+    margin-bottom: 30px;
+}
+.category {
+    font-weight: bold;
+    margin-bottom: 50px;
+    padding: 5px;
+}
+.category span {
+    background-color: #d6d6d6;
+    font-weight: 900;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+.price {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 8px 20px;
+    transition: background-color 0.2s ease-in;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.price:hover {
+    background-color: rgba(0, 0, 0, 0.79);
+}
+.back{
+    text-decoration: none;
+    display: inline-block;
+    background-color: #d6d6d6;
+    padding:8px 16px;
+    color:black;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: all .2s ease-in;
+}
+.back:hover{
+    box-shadow: 0 0 10px gray;
+    background-color: rgba(128, 128, 128, 0.733);
+}
+@media (max-width:1200px){
+    .container{
+        margin:120px 40px 50px;
+        justify-content: center;
+    }
+    .infoProduct{
+        margin:0;
+    }
+}
+@media (max-width:992px){
+    .container{
+        margin:120px 40px 50px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .infoProduct{
+        margin:30px;
+    }
+}
+@media (max-width:555px){
+    .container{
+        margin: 120px 20px 50px;
+    }
+    .infoProduct{
+        margin: 0;
+    }
+@media (min-width:355px){
+    .container{
+        margin: 120px 20px 50px;
+    }
+    .buttonContainer{
+        padding:0;
+        font-size: .7rem;
+    }
+    .images{
+        width:250px;
+        overflow: hidden;
+
+    }
+    .category{
+        font-size: .7rem;
+    }
+}
+}

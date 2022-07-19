@@ -1,0 +1,71 @@
+.container {
+    background-color: white;
+    color: black;
+    padding: 20px 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    width: 200px;
+    height: 320px;
+    transition: all 0.2s ease-in;
+    display: flex;
+    flex-direction: column;
+}
+.container img {
+    transition: all 0.2s ease-in;
+    overflow: hidden;
+}
+.container:hover {
+    box-shadow: 0 8px 10px rgb(79, 79, 79);
+}
+.container:hover img {
+    transform: scale(1.1);
+}
+.container h3{
+    font-size: 1.1rem;
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.itemButton {
+    background-color: black;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+}
+.smallButton {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 3px;
+    transition: background-color 0.2s ease-in;
+}
+.buttonContainer > p {
+    background-color: #d0d0d0;
+    padding: 7px 8px;
+    color: black;
+    border-radius: 3px;
+    font-weight: 900;
+}
+.smallButton:nth-child(3){
+    margin-left: 8px;
+}
+.buttonContainer button:hover {
+    background-color: rgba(0, 0, 0, 0.79);
+}
+.counter{
+    display: inline-block;
+    color:black;
+    position: relative;
+    top:-4px;
+    width:15px;
+    margin: 0 5px;
+    font-size: 1.2rem;
+    text-align: center;
+}

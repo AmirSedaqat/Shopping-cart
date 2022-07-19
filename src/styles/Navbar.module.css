@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+.mainContainer {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+.container {
+    background: -moz-linear-gradient(90deg, rgba(208,208,208,1) 0%, #f2f2f2 54%, rgba(208,208,208,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(208,208,208,1) 0%, #f2f2f2 54%, rgba(208,208,208,1) 100%);
+    background: linear-gradient(90deg, rgba(208,208,208,1) 0%, #f2f2f2 54%, rgba(208,208,208,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d0d0d0",endColorstr="#d0d0d0",GradientType=1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 15px 180px;
+    box-shadow: 0 10px 20px #e2e2e2;
+    z-index: 9999;
+
+}
+.title {
+    font-family: "Righteous", cursive;
+    display: flex;
+}
+.title img {
+    width: 35px;
+}
+.title h2 {
+    display: inline-block;
+}
+.productLink {
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+    border-bottom: 2px solid black;
+    border-radius: 2px;
+    padding: 0 1px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    left:-30px;
+}
+.productLink:hover {
+    transform: scale(1.1);
+    padding: 0 4px;
+}
+.shopIcon {
+    position: relative;
+}
+.shopIcon img {
+    width: 40px;
+}
+.shopIcon span {
+    position: absolute;
+    top: 0;
+    right: -5px;
+    color: black;
+    background-color: #d6d6d6;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 18px;
+    line-height: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+@media (max-width: 1200px) {
+    .container {
+        padding: 15px 80px;
+    }
+    
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 15px 40px;
+    }
+}
+@media (max-width: 555px) {
+    .container {
+        padding: 15px 20px;
+    }
+    .productLink{
+        left:-20px
+
+    }
+}

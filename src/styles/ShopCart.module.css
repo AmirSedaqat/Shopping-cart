@@ -1,0 +1,113 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 150px 175px 50px;
+    transition: all 0.2s ease;
+}
+.cartContainer {
+    width: 70%;
+}
+.payments {
+    width: 27%;
+    background-color: white;
+    border: 1px solid silver;
+    border-radius: 5px;
+    text-align: left;
+}
+.payments p {
+    color: black;
+    margin: 20px 20px 10px;
+}
+.payments p span {
+    color: gray;
+    font-weight: bold;
+}
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 50px 20px 10px;
+}
+.checkout {
+    display: inline-block;
+    background-color: #34a853;
+    padding: 8px 16px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    
+}
+.checkout:hover {
+    background-color: #167d32;
+    box-shadow: 0 0 15px rgba(32, 255, 32, 0.562);
+}
+.clear {
+    cursor: pointer;
+    color: rgb(255, 6, 6);
+    background: none;
+    border: 1px solid red;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    padding:7px 16px;
+    
+}
+.clear:hover {
+    text-shadow: 0 0 15px red;
+    background-color: rgba(255, 0, 0, 0.573);
+    color:white;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.493);
+    
+}
+.complete h3 {
+    color: #167d32;
+    margin: 30px 0 50px;
+    font-size: 1.2rem;
+}
+.complete a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #d6d6d6;
+    padding: 8px 16px;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: all 0.2s ease-in;
+}
+.complete a:hover {
+    box-shadow: 0 0 10px gray;
+    background-color: rgba(128, 128, 128, 0.733);
+}
+@media (max-width:1200px){
+    .container{
+        margin:120px 80px 50px
+    }
+}
+@media (max-width:992px){
+    .container{
+        margin:120px 80px 50px;
+        flex-direction: column-reverse;
+    }
+    .cartContainer{
+        width:100%;
+    }
+    .payments{
+        width:100%;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:768px){
+    .container{
+        margin:120px 40px 50px
+    }
+}
+@media (max-width:600px){
+    .container{
+        margin:120px 20px 50px
+    }
+}
